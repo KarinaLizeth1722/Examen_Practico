@@ -1,0 +1,24 @@
+==========
+HALLAZGOS
+==========
+1. Se verifica que el formulario de compra acepta cualquier tipo de datos (números o texto).
+2. No se observa que exista alguna tipo de validación en el front-end al ingresar datos invalidos
+    en los campos como tarjeta de crédito o fecha.
+3. Es necesario regresar explícitamente al catálogo para que la navegación por páginas esté disponible.
+    por tal motivo se agrego la siguiente linea para que se regrese nuevamente a la pagina principal:
+    >  cy.visit("https://www.demoblaze.com/");
+    >  cy.wait(1000);
+
+============
+CONCLUSIONES
+============
+1. El flujo de compra automatizado se completó  de forma exitosa.
+2. La plataforma permite simular una experiencia de usuaruio básica sin bloqueos 
+   ténicos aparentes.
+3. La navegación es sencilla y clara, pero la falta de validaciones puede representar un 
+   riesgo de calidad en un entorno productivo.
+4. La prueba cubre satisfactoriamete lo solicitado
+    - Agregar dos productos al carrito.
+    - Visualizar el carrito.
+    - Llenado de formulario.
+    - Confirmación de la compra.
